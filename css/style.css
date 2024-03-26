@@ -162,12 +162,7 @@ footer {
 		padding: 2rem 4%;
 	}
 	
-/* 	.contact-content .content .email-dis {
-	        text-align: center;
-	        flex-direction: column;
-		gap: 1rem;
-		padding: 1rem;
-	} */
+
 }
 
 @media (max-width: 768px) {
@@ -228,12 +223,7 @@ footer {
 		transform: translateX(0);
 		transition-delay: 0.25s;
 	}
-		.contact-content .content .email-dis {
-		text-align: center;
-		flex-direction: column;
-		gap: 1rem;
-		padding: 1rem;
-	}
+		
 
 	.contact-content .content .email-dis {
 		text-align: center;
