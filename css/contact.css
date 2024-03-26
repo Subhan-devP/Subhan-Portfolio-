@@ -57,11 +57,6 @@
 	z-index: 2;
 }
 
-.education-box .contact-content:hover::before,
-.education-box .contact-content:focus::before,
-.education-box .contact-content:active:before {
-	box-shadow: 0 0 20px var(--text-bg-color);
-}
 .contact-box .contact-content:hover > .content a::before {
 	width: 100%;
 }
