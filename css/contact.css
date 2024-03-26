@@ -78,11 +78,13 @@
 .contact-content .content a i {
 	height: 100%;
 	font-size: 3.2rem;
-	margin-left: 4rem;
+	margin-left: 1rem;
+	padding: 0;
 }
 .contact-content .content a p {
 	font-weight: 600;
 	padding-top: 0.5rem;
+	margin-left: -3rem;
 	font-size: 1.6rem;
 }
 .contact-content .content a p span {
