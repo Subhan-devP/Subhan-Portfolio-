@@ -51,10 +51,7 @@
 	content: "";
 	position: absolute;
 	top: 34%;
-	left: 5%;
-	width: 2rem;
-	height: 2rem;
-	background: var(--main-bg-color);
+	left: 1%;
 	border-radius: 50%;
 	transition: 0.5s;
 	z-index: 2;
