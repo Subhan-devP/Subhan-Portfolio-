@@ -1,0 +1,155 @@
+/**
+ * $$$$$$$$$-----      ABOUT SECTION      -----$$$$$$$$$$$
+ *
+ * @format
+ */
+
+.about {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 2rem;
+	background: var(--second-bg-color);
+	padding-bottom: 6rem;
+	position: relative;
+}
+
+.heading {
+	position: relative;
+	font-size: 5rem;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+span {
+	color: var(--main-bg-color);
+}
+
+.about-img {
+	position: relative;
+	width: 25rem;
+	height: 25rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-img img {
+	width: 90%;
+	height: 90%;
+	border-radius: 50%;
+	border: 0.2rem solid var(--main-bg-color);
+	background-image: url(../images/logoIcon/1006503.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.about-img .circle-spin {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(0);
+	width: 97%;
+	height: 97%;
+	border-top: 0.4rem solid transparent;
+	border-bottom: 0.4rem solid transparent;
+	border-left: 0.4rem solid var(--main-bg-color);
+	border-right: 0.4rem solid var(--main-bg-color);
+	border-radius: 50%;
+	animation: aboutSpinner 6s linear infinite;
+}
+
+.about-content {
+	text-align: center;
+}
+
+.about-content h3 {
+	position: relative;
+	display: inline-block;
+	font-size: 2.6rem;
+}
+
+.about-content p {
+	width: fit-content;
+	text-align: justify;
+	position: relative;
+	flex-basis: 40;
+	font-size: 1.6rem;
+	margin: 2rem 0 3rem;
+	padding: 0 2rem;
+	font-weight: 500;
+	transition: 1s ease;
+	
+}
+
+.btns {
+	display: inline-block;
+	width: 15rem;
+}
+
+.btns a::before {
+	background: var(--second-bg-color);
+}
+
+
+/* cercoles */
+
+.about .buoaty-sercol {
+	position: absolute;
+	top: 1rem;
+	right: 3rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	gap: 3rem;
+	z-index: 1;
+}
+.about .buoaty-sercol span {
+	width: 0.5rem;
+	height: 0.5rem;
+	background: var(--main-bg-color);
+	border-radius: 50%;
+}
+.about .buoaty-sercol .animate {
+	width: 100%;
+	height: 100%;
+	border-radius: 0;
+}
+
+@keyframes aboutSpinner {
+	100% {
+		transform: translate(-50%, -50%) rotate(360deg);
+	}
+}
+@keyframes aboutWindowB {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100vw;
+	}
+}
+
+@media (max-width: 1200px) {
+	.about .buoaty-sercol {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+}
+@media (max-width: 1100px) {
+	.about .buoaty-sercol {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+}
+@media (max-width: 991px) {
+	.about .buoaty-sercol {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+}
+@media (max-width: 794px) {
+	.about .buoaty-sercol {
+		display: none;
+	}
+}

@@ -1,0 +1,114 @@
+/**
+ * $$$$$$$$$-----      CONTACT SECTION      -----$$$$$$$$$$$
+ *
+ * @format
+ */
+
+.contact {
+	height: 100vh;
+	min-height: auto;
+	padding: 0.2 9%;
+	padding-top: 15rem;
+}
+.education .education-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5rem;
+}
+
+.education-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5rem;
+}
+
+.contact-list .education-row {
+	gap: 3rem;
+}
+
+.education-box .contact-content::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -1.1rem;
+	width: 2rem;
+	height: 2rem;
+	background: var(--bg-color);
+	border-radius: 50%;
+	transition: 0.5s;
+}
+.education-culomn .education-box {
+	position: relative;
+	border-left: 0.2rem solid var(--main-bg-color);
+}
+
+.education-box .contact-content {
+	position: relative;
+	padding-left: 2rem;
+}
+
+.education-box .contact-content::before {
+	content: "";
+	position: absolute;
+	top: 34%;
+	left: 5%;
+	width: 2rem;
+	height: 2rem;
+	background: var(--main-bg-color);
+	border-radius: 50%;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+.education-box .contact-content:hover::before,
+.education-box .contact-content:focus::before,
+.education-box .contact-content:active:before {
+	box-shadow: 0 0 20px var(--text-bg-color);
+}
+.contact-box .contact-content:hover > .content a::before {
+	width: 100%;
+}
+.contact-content .content a {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: first;
+	gap: 6rem;
+	position: relative;
+	padding: 1.5rem;
+	border: 0.2rem solid var(--main-bg-color);
+	color: var(--text-bg-color);
+	border-radius: 0.6rem;
+	margin-bottom: 2rem;
+	overflow: hidden;
+	z-index: 1;
+}
+.contact-content .content a i {
+	height: 100%;
+	font-size: 3.2rem;
+	margin-left: 4rem;
+}
+.contact-content .content a p {
+	font-weight: 600;
+	padding-top: 0.5rem;
+	font-size: 1.6rem;
+}
+.contact-content .content a p span {
+	margin-left: 1rem;
+}
+
+.contact-content .content a::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: var(--second-bg-color);
+	z-index: -1;
+	transition: 0.5s;
+}
+
+.contact-content .content a:hover::before {
+	width: 100%;
+}
